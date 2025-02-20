@@ -188,5 +188,3 @@ We welcome all suggestions and contributions to improve PassForge!
 ---
 
 PassForge – **Secure Your Passwords with Ease** 🔐
-
-```
