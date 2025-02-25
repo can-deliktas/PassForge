@@ -1,3 +1,4 @@
+
 import random
 import string
 import pyperclip
@@ -88,13 +89,17 @@ def save_password(password, strength):
     if save_choice == "y":
         # Create a filename with the current date and time
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        save_path = f"password_{timestamp}.txt"  # For example: password_2025-02-20_14-30-00.txt
+        save_path = f"password_{timestamp}.txt"  # For example: password_2025-xx-xx_17-30-00.txt
         with open(save_path, 'w') as f:
             # Save password, strength, and timestamp
             f.write(f"Password: {password}\n")
             f.write(f"Strength: {strength}\n")
             f.write(f"Generated on: {timestamp}\n")
             f.write("\n---\nPassForge\n")
+            f.write("https://github.com/can-deliktas/PassForge/\n")
+            f.write("Contributors:\n")
+            f.write("can-deliktas\n")
+
         print(f"Password saved to: {save_path}")
     else:
         print("Password was not saved.")
