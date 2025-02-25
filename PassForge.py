@@ -99,7 +99,7 @@ def save_password(password, strength):
             f.write("https://github.com/can-deliktas/PassForge/\n")
             f.write("Contributors:\n")
             f.write("can-deliktas\n")
-
+            f.write("DevByte1328\n")
         print(f"Password saved to: {save_path}")
     else:
         print("Password was not saved.")
