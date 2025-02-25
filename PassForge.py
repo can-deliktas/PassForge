@@ -89,7 +89,7 @@ def save_password(password, strength):
     if save_choice == "y":
         # Create a filename with the current date and time
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        save_path = f"password_{timestamp}.txt"  # For example: password_2025-xx-xx_17-30-00.txt
+        save_path = f"password_{timestamp}.txt"  # For example: password_date_time.txt
         with open(save_path, 'w') as f:
             # Save password, strength, and timestamp
             f.write(f"Password: {password}\n")
