@@ -23,6 +23,12 @@ PassForge is a powerful and customizable password generator and strength evaluat
 
 ---
 
+## 💻 **PassForge GUI**
+
+The graphical user interface (GUI) version of PassForge, built with **Tkinter**, provides an easy-to-use experience for generating and evaluating passwords. The GUI version allows users to visually interact with the application, enter password length, select character types (uppercase, lowercase, numbers, special characters), and view the password strength. It also offers features such as **copying to clipboard** and **saving passwords** to a file.
+
+---
+
 ## 📥 **Installation & Setup**
 
 To get started with PassForge, follow the steps below:
@@ -49,12 +55,25 @@ pip install -r requirements.txt
 Once the dependencies are installed, you can run the program with:
 
 ```
-python3 PassForge.py
+python3 PassForge_GUI.py
 ```
 
 ---
 
-## 🎯 **Usage**
+## 🎯 **Usage GUI**
+
+After running the program, you will see the following options:
+
+- **Password Length**: Enter the desired length for the password.
+- **Character Selection**: Choose to include uppercase letters, lowercase letters, numbers, and special characters.
+- **Generate Password**: Click the "Generate Password" button to create the password.
+- **Password Strength**: The strength of the password will be shown as "Weak," "Moderate," "Strong," or "Very Strong."
+- **Copy to Clipboard**: You can copy the generated password to the clipboard.
+- **Save Password**: Save the password, timestamp, and strength evaluation to a **.txt** file.
+
+---
+
+## 🎯 **Usage Terminal**
 
 When you launch the program, you will be presented with the following options:
 
@@ -80,9 +99,13 @@ When you choose to save the password to a file, the content of the file will loo
 
 ```
 Password: w4Y#p2B7Z$W
-Generated on: 2025-02-20_14-30-00
+Generated on: date_time
 Password Strength: Strong
 Signature: PassForge
+https://github.com/can-deliktas/PassForge/
+Contributors:
+can-deliktas
+DevByte1328
 ```
 
 The password, generation timestamp, strength evaluation, and the signature ("PassForge") are written to the file.
@@ -107,6 +130,7 @@ The project directory structure is as follows:
 ```
 PassForge/
 │── PassForge.py                # Main program file containing the logic
+│── PassForge_GUI.py            # GUI version (Tkinter)
 │── README.md                   # Project documentation
 │── requirements.txt            # List of dependencies for the project
 │── LICENSE                     # License file
@@ -121,7 +145,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🤝 **Contributing**
+## 👨‍💻 **Contributors**  
+A huge thanks to these amazing people for contributing to PassForge! 🎉  
+
+- [can-deliktas](https://github.com/can-deliktas)
+- [DevByte1328](https://github.com/DevByte1328)
+
+(*Want to be here? Make a contribution!*)  
+
+---
+
+## 🤝 **How to Contribute?**  
 
 Contributions are welcome! If you would like to contribute to PassForge, follow these steps:
 
@@ -177,12 +211,30 @@ We’ll review your changes and if everything looks good, we’ll merge it into 
 
 ## 👨‍💻 **Developer Notes**
 
+### 🛠 **Note:**  
+All enhancements should align with the latest code in the GitHub repository and be submitted via pull requests to ensure compatibility and quality. 🚀
+
 PassForge was designed to be simple yet powerful. It focuses on providing customizable password generation, real-time password strength evaluation, and convenient file-saving features. The code is modular, allowing for easy enhancements and improvements.
 
 ### Future Enhancements
-- **Graphical User Interface (GUI)**: Implement a GUI using `Tkinter` or other libraries to make it more user-friendly.
-- **Password History**: Store and retrieve previously generated passwords securely.
-- **Additional Password Strength Metrics**: Include more complex password strength evaluation, such as entropy or advanced algorithms.
+
+- **🔄 Password History**:  
+  Store previously generated passwords securely and allow users to retrieve them later.  
+
+- **📊 Advanced Password Strength Metrics**:  
+  Implement more sophisticated password strength analysis, including entropy calculation and dictionary attack resistance.  
+
+- **📱 Mobile Application (Android & iOS)**:  
+  Develop a mobile version of PassForge to generate and manage passwords on smartphones.  
+
+- **💻 Standalone Desktop Application (EXE / Mac / Linux App)**:  
+  Convert PassForge into a standalone executable (.exe for Windows, .app for macOS, and .deb/.AppImage for Linux) so users can run it without needing Python installed.  
+
+- **🌐 Web-Based Version**:  
+  Create an online version of PassForge where users can generate secure passwords directly from their browser.  
+
+- **🔑 Password Manager Integration**:  
+  Allow integration with popular password managers like Bitwarden, LastPass, and KeePass.  
   
 We welcome all suggestions and contributions to improve PassForge!
 
