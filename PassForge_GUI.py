@@ -87,6 +87,10 @@ def save_password():
             f.write(f"Strength: {strength_text}\n")
             f.write(f"Generated on: {timestamp}\n")
             f.write("\n---\nPassForge\n")
+            f.write("https://github.com/can-deliktas/PassForge/\n")
+            f.write("Contributors:\n")
+            f.write("can-deliktas\n")
+            f.write("DevByte1328\n")
         messagebox.showinfo("Saved", f"Password saved to: {file_path}")
 
 # Clear fields
