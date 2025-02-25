@@ -93,12 +93,12 @@ When you launch the program, you will be presented with the following options:
 
 ---
 
-## 📄 **Generated Password Format**
+## 📄 **Example Generated Password Format**
 
 When you choose to save the password to a file, the content of the file will look like this:
 
 ```
-Password: w4Y#p2B7Z$W
+Password: w4Y#p2B7Z$W35
 Generated on: date_time
 Password Strength: Strong
 Signature: PassForge
